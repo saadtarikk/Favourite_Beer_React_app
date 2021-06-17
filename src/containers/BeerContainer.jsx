@@ -24,13 +24,17 @@ const BeerContainer = () => {
     const onBeerSelect = (beer) => {
         setSelectedBeer(beer)
         
-        
     }
 
     const handleFavBeer = (beer) => {
-        console.log("handleFavBeer called")
+        if(!favBeer.includes(beer)){
         const newFavBeer = [...favBeer, beer]
+        console.log(newFavBeer[0].name)
+
+
         setFavBeer(newFavBeer)
+
+        }
 
     }
 
