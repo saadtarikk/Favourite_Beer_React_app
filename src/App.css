@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  margin: 20px;
 }
 
 .App-logo {
@@ -35,4 +39,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img {
+  height: 200px;
+}
+
+.fav-beer {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+ul {
+  list-style:none;
+
 }
